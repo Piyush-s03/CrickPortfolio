@@ -1,0 +1,434 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #000, #1a1a1a);
+  color: #fff;
+  line-height: 1.6;
+  padding-top: 70px; /* For sticky navbar */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Glass Navbar */
+.glass-nav {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.glass-nav .nav-link:hover {
+  color: #ffc107 !important;
+  transform: scale(1.05);
+}
+
+/* Glass Footer */
+.glass-footer {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-icons a {
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
+
+
+#login{
+
+  background: url('https://t3.ftcdn.net/jpg/01/82/04/38/240_F_182043866_cQZwPYqKo2xZvZ8sSwW7rdRbf72GcsH4.jpg');
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 80px;
+  color: wheat;
+}
+#teams{
+
+
+  background: url('https://media.istockphoto.com/id/1326017088/photo/cricket-fielders-are-celebrating.jpg?s=612x612&w=0&k=20&c=BI2Z8T6kbMD8DyTkzdly2hgxrDmLYLAkjE85tdS6ZpU=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 80px;
+  color: wheat;
+}
+#teams.input.form-control{
+
+   background: rgba(255, 255, 255, 0.1);
+  color: #00d4ff;
+  border: 1px solid #00d4ff;
+  border-radius: 30px;
+  padding: 12px 18px;
+  backdrop-filter: blur(6px);
+}
+
+
+/* Global Button */
+.btn {
+  border-radius: 30px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b9b8b4 !important;
+  color: #000 !important;
+}
+
+/* === PAGE-SPECIFIC STYLES === */
+
+/* HOME */
+/* Home Page Background */
+.home-page {
+  background-image: url('https://media.istockphoto.com/id/1402084914/photo/cricket-ball-on-top-of-cricket-bat-on-green-grass-of-cricket-ground-background.jpg?s=612x612&w=0&k=20&c=PSz4n0BZ8sJL9uN9K3zF3Ay7PBakRMf9uL5tkz7QJ_k=');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* Optional: Add dark glass overlay to make text readable */
+.glass-card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  color: white;
+  backdrop-filter: blur(8px);
+}
+
+
+
+/* PLAYERS */
+#players {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  padding: 80px 20px;
+
+
+}
+/* Players Section Styling */
+#players .card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+#players .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+#players .card-title {
+  color: #ffc107;
+}
+
+#players input.form-control {
+  background: rgba(255, 255, 255, 0.1);
+  color: #00d4ff;
+  border: 1px solid #00d4ff;
+  border-radius: 30px;
+  padding: 12px 18px;
+  backdrop-filter: blur(6px);
+}
+
+#players input::placeholder {
+  color: #ccc;
+}
+
+
+
+#players .btn-primary {
+  background-color: #00d4ff;
+  border-color: #00d4ff;
+  color: #000;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+#players .btn-primary:hover {
+  background-color: #fff;
+  color: #00d4ff;
+}
+
+#players .input-group {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#players .card-img-top {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+/* Section background & spacing */
+#players {
+  background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
+  padding: 80px 0;
+  background: url('https://res.cloudinary.com/confirmed-web/image/upload/c_lfill,w_1600,ar_3:1/v1710509954/adidas-group/I3S/stories/images/adidas-India-cricket-team-world-cup-campaign-behind-the-scenes-1440x9999_rwawmq.webp') no-repeat center center/cover;
+  padding: 80px 20px;
+  min-height: 100vh;
+}
+.page-section {
+  min-height: 100vh;
+  color: #fff;
+  padding: 60px 20px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* GROUNDS */
+/* #grounds {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  /* background: url('https://cdn.londonandpartners.com/asset/lords-cricket-ground-and-lords-tour_lords-cricket-ground-photo-jed-leicester-image-courtesy-of-the-marylebone-cricket-club-mcc_76bca207c35df2046e533d96952eeffd.jpg') no-repeat center center/cover; */
+ 
+  #grounds {
+  background-image: url('https://cdn.londonandpartners.com/asset/lords-cricket-ground-and-lords-tour_lords-cricket-ground-photo-jed-leicester-image-courtesy-of-the-marylebone-cricket-club-mcc_76bca207c35df2046e533d96952eeffd.jpg'); /* Replace with your preferred image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ACHIEVEMENTS */
+#achievements {
+  background: linear-gradient(145deg, #1c1c1c, #000000);
+  background: url('https://i.ytimg.com/vi/80stgcbb6zU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB5NKObGgh12i3Axu_dJchpseGYuA')no-repeat center center/cover;
+
+  padding: 80px 20px;
+}
+
+/* CLUBS */
+#clubs {
+  background: #c5c3c3;
+  background: url('https://i0.wp.com/cricketgraph.com/wp-content/uploads/2022/06/Croire-Cricket-Club-Gurgaon-7.jpg?fit=870%2C448&ssl=1') no-repeat center center/cover;
+  padding: 80px 20px;
+}
+.clubs.row{
+
+  background: linear-gradient(grey);
+}
+/* SHOP */
+/* #shop{ */
+  /* background: radial-gradient(circle, #13a6f0, #2f4153); */
+  /* background: url('https://content.jdmagicbox.com/v2/comp/bangalore/d6/080pxx80.xx80.210714181651.g-dealers-cqt32gnkf8.jpg')no-repeat center center/cover; */
+  /* padding: 80px 20px; */
+
+  .glass-card {
+  background: rgba(180, 170, 170, 0.07);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+  color: #fff;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+#shop {
+  background-image: url('https://content.jdmagicbox.com/v2/comp/bangalore/d6/080pxx80.xx80.210714181651.g-dealers-cqt32gnkf8.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* RULES */
+#rules {
+  background: radial-gradient(circle, #13a6f0, #2f4153);
+  padding: 80px 20px;
+}
+
+/* CONTACT */
+#contact {
+  background: linear-gradient(to right, #304757, #99f2c8);
+  color: #000;
+  padding: 80px 20px;
+}
+
+/* HISTORY */
+#history {
+  background: linear-gradient(to right, #373B44, #4286f4);
+  padding: 80px 20px;
+}
+
+/* EVENTS */
+#events {
+  background: #0f0c29;
+  background: linear-gradient(to right, #1c1d1d, #3995a5);
+  padding: 80px 20px;
+}
+
+.card {
+  background: rgba(21, 158, 238, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  color: #254152;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Card images */
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Search Bar */
+.search-bar input {
+  background: transparent;
+  color: white;
+  border: 2px solid #ffc107;
+  border-radius: 50px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.search-bar .btn {
+  border-radius: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #101010;
+  color: #ccc;
+  padding: 30px 0;
+  font-size: 14px;
+  text-align: center;
+}
+.hero {
+  height: 100vh;
+  background-image: url("https://wallpaperaccess.com/full/1959336.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+.home-page {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero .glass-card {
+  max-width: 700px;
+  text-align: center;
+  padding: 40px;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+  z-index: 0;
+}
+
+
+/* === RESPONSIVENESS === */
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+
+  .search-bar input {
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 140px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+}
