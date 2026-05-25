@@ -53,7 +53,7 @@ useEffect(() => {
         <Route path="/teams" element={<Teams />} />
         <Route path="/grounds" element={<Grounds />} />
         <Route path="/achievements" element={<Achievements />} />
-        <Route path="/shop" element={<Shop />} />
+        <Route path="/Shop" element={<Shop/>} />
         <Route path="/clubs" element={<Clubs />} />
         <Route path="/livescore" element={<LiveScore />} />
         <Route path="/contact" element={<Contact />} />
