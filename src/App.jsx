@@ -168,8 +168,8 @@ const App = () => {
         />
 
         <Route
-          path="/shop"
-          element={<Shop />}
+          path ="/Shop"
+          element ={<Shop/>}
         />
 
         <Route
