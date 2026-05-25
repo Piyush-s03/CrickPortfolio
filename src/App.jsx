@@ -19,9 +19,9 @@ import History from "./pages/History";
 import Events from "./pages/Events";
 import Teams from "./pages/Teams";
 
-import Login from "./pages/login";
-import Signup from "./pages/signup";
-import VisitorsLog from "./pages/Visitorslog";
+import Signup from "./pages/Signup";
+import login from "./pages/login";
+import VisitorsLog from "./pages/VisitorsLog";
 
 import "./App.css";
 
