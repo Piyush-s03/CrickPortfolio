@@ -1,41 +1,41 @@
+// src/pages/Signup.jsx
 import React, { useState } from 'react';
+import './Auth.css';
 import { useNavigate } from 'react-router-dom';
 
-function Signup() {
+const Signup = () => {
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleSignup = (e) => {
     e.preventDefault();
-    localStorage.setItem('userEmail', email);
-    localStorage.setItem('userPassword', password);
-    alert('Signup successful!');
+
+    const user = { email, name, password };
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+
+    users.push(user);
+    localStorage.setItem('users', JSON.stringify(users));
+
     navigate('/login');
   };
 
   return (
-    <div className="container mt-5">
-      <h2 className="text-center mb-4">Signup</h2>
-      <form className="mx-auto" style={{ maxWidth: "400px" }} onSubmit={handleSignup}>
-        <input
-          type="email"
-          className="form-control mb-3"
-          placeholder="Email"
-          required
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          className="form-control mb-3"
-          placeholder="Password"
-          required
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit" className="btn btn-primary w-100">Signup</button>
+    <div className="auth-container">
+      <form onSubmit={handleSignup} className="auth-form">
+        <h2>Signup</h2>
+        <input type="text" placeholder="Full Name" value={name}
+          onChange={(e) => setName(e.target.value)} required />
+        <input type="email" placeholder="Email" value={email}
+          onChange={(e) => setEmail(e.target.value)} required />
+        <input type="password" placeholder="Password" value={password}
+          onChange={(e) => setPassword(e.target.value)} required />
+        <button type="submit">Signup</button>
+        <p onClick={() => navigate('/login')}>Already have an account? Login</p>
       </form>
     </div>
   );
-}
+};
 
 export default Signup;

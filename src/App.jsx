@@ -16,8 +16,11 @@ import History from './pages/History'
 import Events from './pages/Events'
 import Teams from './pages/Teams'
 import './App.css'
-import Login from './pages/Login';
+import Login from './pages/login'
 import Signup from './pages/signup'
+import VisitorsLog from './pages/Visitorslog'
+import { useEffect } from "react";
+
 
 
 
@@ -25,6 +28,22 @@ import Signup from './pages/signup'
   
 
 const App = () => {
+  
+
+useEffect(() => {
+    const visitData = {
+      visitTime: new Date().toLocaleString(),
+      userAgent: navigator.userAgent,
+      pageVisited: window.location.pathname,
+    };
+
+    const previousVisits = JSON.parse(localStorage.getItem("userVisits")) || [];
+
+    previousVisits.push(visitData);
+
+    localStorage.setItem("userVisits", JSON.stringify(previousVisits));
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -43,10 +62,16 @@ const App = () => {
         <Route path='/events'element={<Events/>} />
          <Route path="/signup" element={<Signup />} /> 
         <Route path="/login" element={<Login />} />
-      </Routes>
-      <Footer />
+        <Route path='/VisitorsLog' element ={<VisitorsLog/>}/>
+        </Routes>
+        <Footer />
+
+       <div>
+    </div>
     </>
+   
   )
 }
 
-export default App
+
+export default App;

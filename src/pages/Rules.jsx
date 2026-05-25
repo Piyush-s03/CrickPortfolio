@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const rulesList = [
-  "Cricket rules",
+  "Cricket",
   "Batting (cricket)",
   "Bowling (cricket)",
   "Dismissal (cricket)",

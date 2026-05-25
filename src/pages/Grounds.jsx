@@ -7,7 +7,6 @@ const Grounds = () => {
   const [groundInfo, setGroundInfo] = useState(null);
   const [error, setError] = useState("");
 
-  // ✅ Proper place for AOS
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
