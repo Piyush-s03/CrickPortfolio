@@ -89,7 +89,7 @@ import Home from "./pages/Home";
 import Players from "./pages/Players";
 import Grounds from "./pages/Grounds";
 import Achievements from "./pages/Achievements";
-import Shop from "./pages/Shop";
+// import Shop from "./pages/Shop";
 import Clubs from "./pages/Clubs";
 import LiveScore from "./pages/LiveScore";
 import Contact from "./pages/Contact";
@@ -167,10 +167,10 @@ const App = () => {
           element={<Achievements />}
         />
 
-        <Route
+        {/* <Route
           path ="/Shop"
           element ={<Shop/>}
-        />
+        /> */}
 
         <Route
           path="/clubs"
