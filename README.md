@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -15,3 +16,7 @@ If you are developing a production application, we recommend using TypeScript wi
 # cricket-info-portal
 A modern Cricket Info Portal built with React
 >>>>>>> d8d32c7945c98b4582692a5b574f503e41cfa92b
+=======
+# CrickPortfolio
+A modern Cricket Info Portal built with React
+>>>>>>> 3b7e49a387ebaa09e0625df670114fc646147e08
