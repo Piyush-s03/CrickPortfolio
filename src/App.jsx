@@ -8,19 +8,18 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Players from "./pages/Players";
+import Teams from "./pages/Teams";
 import Grounds from "./pages/Grounds";
 import Achievements from "./pages/Achievements";
-// import Shop from "./pages/Shop";
-import Clubs from "./pages/Clubs";
-import LiveScore from "./pages/Livescore";
+import Shop from "./pages/Shop";
+import Club from "./pages/Club";
+import LiveScore from "./pages/LiveScore";
 import Contact from "./pages/Contact";
 import Rules from "./pages/Rules";
 import History from "./pages/History";
 import Events from "./pages/Events";
-import Teams from "./pages/Teams";
-
+import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import login from "./pages/login";
 import VisitorsLog from "./pages/VisitorsLog";
 
 import "./App.css";
@@ -30,13 +29,9 @@ const App = () => {
   useEffect(() => {
 
     const visitData = {
-
       visitTime: new Date().toLocaleString(),
-
       userAgent: navigator.userAgent,
-
       pageVisited: window.location.pathname,
-
     };
 
     const previousVisits =
@@ -55,11 +50,7 @@ const App = () => {
 
     <>
 
-      {/* NAVBAR */}
-
       <Navbar />
-
-      {/* ROUTES */}
 
       <Routes>
 
@@ -74,11 +65,6 @@ const App = () => {
         />
 
         <Route
-          path="/teams"
-          element={<Teams />}
-        />
-
-        <Route
           path="/grounds"
           element={<Grounds />}
         />
@@ -88,23 +74,14 @@ const App = () => {
           element={<Achievements />}
         />
 
-        {/* SHOP ROUTE */}
-
-        {/*
         <Route
-          path="/shop"
-          element={<Shop />}
-        />
-        */}
-
-        <Route
-          path="/clubs"
-          element={<Clubs />}
+          path="/club"
+          element={<Club />}
         />
 
         <Route
           path="/livescore"
-          element={<LiveScore />}
+          element={<Livescore />}
         />
 
         <Route
@@ -143,8 +120,6 @@ const App = () => {
         />
 
       </Routes>
-
-      {/* FOOTER */}
 
       <Footer />
 
